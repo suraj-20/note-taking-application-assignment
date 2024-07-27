@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+  gap: 1rem;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.notes-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+input[type="text"],
+textarea {
+  /* width: 90%; */
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: #f0f0f0;
+}
+
+.note-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-item {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.note-item h3 {
+  margin-top: 0;
+}
+
+.note-actions {
+  margin-top: 10px;
+}
+
+.note-actions button {
+  margin-right: 5px;
+}
+
+.pagination {
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close-button {
+  float: right;
+  /* background: none; */
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .App h1 {
+    font-size: 1.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .search-form {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
